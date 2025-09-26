@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.homeimg{
+    text-align: center;
+    margin-top: 50px;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+        url("/images/theaterchairimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 h1, h2, p{
     color: whitesmoke;
 }
