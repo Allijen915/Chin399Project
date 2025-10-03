@@ -8,18 +8,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <nav>
-    <ul>
+ <nav>
+  <ul>
     <li><a href="/index.html">首頁</a></li>
     <li><a href="/categories/index.html">類別</a></li>
-    <li><a href="/search/index.html">搜索</a></li>
-    </ul>
-  </nav>
-  <section class="homeimg">
+  </ul>
+
+  <!-- Global search -->
+  <form action="/searchresults/index.html" method="get" class="site-search">
+    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
+    <button type="submit">搜尋</button>
+  </form>
+</nav>
+  <section class="homeimg title">
   <h1>英語電影院</h1>
   <h2>一邊看一邊學！</h2>
   </section>
-  <section class="doorimg">
+  <section class="doorimg title">
   <p><a href = "/categories/index.html">進去電影院</a></p>
   </section>
 </body>

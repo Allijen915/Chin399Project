@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英語電影院 - 部落格影片 (Vlogs)</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-wrap {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      background: #111;
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-meta {
+      color: #fff;
+      margin-top: 0.75rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">首頁</a></li>
+      <li><a href="../categories/index.html">類別</a></li>
+      <li><a href="../searchresults/index.html">搜索</a></li>
+    </ul>
+    <form action="../searchresults/index.html" method="get" class="site-search">
+      <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
+      <button type="submit">搜尋</button>
+    </form>
+  </nav>
+
+  <main class="container">
+    <div class="title">
+    <h1>部落格影片 (Vlogs)</h1>
+      </div>
+   
+    <div class="video-wrap">
+      <div class="ratio">
+        <iframe src="https://www.youtube.com/embed/GvdwTga-Zhs"
+          title="Vlog 1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-meta">
+        <h3>第一個部落格影片標題</h3>
+        <p>簡短描述這個影片。</p>
+        <a href="/notes/test.html">NOTES</a>
+      </div>
+    </div>
+
+    <div class="video-wrap">
+      <div class="ratio">
+        <iframe src="https://www.youtube.com/embed/qYOFs7rU1yI"
+          title="Vlog 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-meta">
+        <h3>第二個部落格影片標題</h3>
+        <p>這裡是另一個 vlog 的描述。</p>
+      </div>
+    </div>
+
+
+    <div class="video-wrap">
+      <div class="ratio">
+        <iframe src="https://www.youtube.com/embed/3Rv8Qm4trmA"
+          title="Vlog 3"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-meta">
+        <h3>第三個部落格影片標題</h3>
+        <p>這裡是第三個 vlog 的描述。</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

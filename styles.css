@@ -6,6 +6,24 @@
  body {
     font-family: "Noto Serif TC", serif;
   }
+/* Classesw */
+.subcat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* spacing between items */
+}
+.title{
+    background-color: rgb(21, 24, 27);
+    border: 5px solid rgb(229, 199, 52);
+    padding: 30px 70px; 
+    margin: 30px;
+}
+.subtitles{
+    background-color: rgb(48, 81, 115);
+    border: 5px solid rgb(229, 199, 52);
+    padding: 30px 70px; 
+    margin: 30px;
+}
 .doorimg{
     font-size: 100px;
     padding: 100px;
@@ -29,6 +47,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+/* text and links*/
 h1, h2, p{
     color: whitesmoke;
 }
@@ -39,29 +58,78 @@ a{
     color: whitesmoke;
     text-decoration: none;
 }
-nav ul{
-    position: relative;
-    top: 15px;
-}
-nav{
-     background-color: rgb(21, 24, 27);
-     width: 100%;
-     height: 60px;
-}
 a:hover{
     text-decoration: underline;
 }
+
+header, footer {
+    background-color: rgb(21, 24, 27);
+    border: 5px solid rgb(229, 199, 52);
+    padding: 30px 70px; 
+    margin: 30px;
+}
+
+/* Nav container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* links on left, search on right */
+  padding: 0.5rem 1rem;
+  background-color: #36353b; /* light background, adjust if needed */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Nav links */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 8px;
+  height: 40px;
+}
 nav li{
-    margin:50px;
     list-style-type: none;
     display: inline; 
     position: relative; 
     left: 50px;
     right: 50px;
 }
-header, section, footer {
-    background-color: rgb(21, 24, 27);
-    border: 5px solid rgb(229, 199, 52);
-    padding: 30px 70px; 
-    margin: 30px;
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+nav ul li a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Search form */
+.site-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-search input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.site-search button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.site-search button:hover {
+  background-color: #555;
 }

@@ -3,18 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>英語電影院- 類別三</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <title>英語電影院 - 媒體類型</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <nav>
-   <ul>
-    <li><a href="/index.html">首頁</a></li>
-    <li><a href="/categories/index.html">類別</a></li>
-    <li><a href="/search/index.html">搜索</a></li>
+  
+  <nav>
+    <ul>
+      <li><a href="../index.html">首頁</a></li>
+      <li><a href="/categories/index.html">類別</a></li>
+      <li><a href="../searchresults/index.html">搜索</a></li>
     </ul>
+
+    <form action="../searchresults/index.html" method="get" class="site-search">
+      <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
+      <button type="submit">搜尋</button>
+    </form>
   </nav>
-  <h1>類別</h1>
+
+ 
+  <section class="title">
+    <h1>媒體類型</h1>
+  </section>
+
+
+  <div class="subtitles">
+    <h3><a class="category-card" href="../searchresults/index.html?type=reel">短片 (Reels)</a></h3>
+  </div>
+
+  <div class="subtitles">
+    <h3><a class="category-card" href="../searchresults/index.html?type=movie">電影 (Movies)</a></h3>
+  </div>
+
+  <div class="subtitles">
+    <h3><a class="category-card" href="../searchresults/index.html?type=tv">電視劇 (TV)</a></h3>
+  </div>
+
+  <div class="subtitles">
+  <h3><a class="category-card" href="../contentpages/vlogs.html">部落格影片 (Vlogs)</a></h3>
+  </div>
 </body>
 </html>

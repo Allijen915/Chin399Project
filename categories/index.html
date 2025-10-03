@@ -3,32 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>英語電影院- 類別</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <title>英語電影院 - 類別</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <nav>
-    <ul>
-    <li><a href="/index.html">首頁</a></li>
+  <nav>
+  <ul>
+    <li><a href="../index.html">首頁</a></li>
     <li><a href="/categories/index.html">類別</a></li>
-    <li><a href="/search/index.html">搜索</a></li>
-    </ul>
-  </nav>
-  <section>
-  <h1>類別</h1>
+    <li><a href="../searchresults/index.html">搜索</a></li>
+  </ul>
+
+  <form action="../searchresults/index.html" method="get" class="site-search">
+    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
+    <button type="submit">搜尋</button>
+  </form>
+</nav>
+
+
+  <section class="title">
+    <h1>類別</h1>
   </section>
-  <section>
-  <h3><a href = levels/index.html>程度</a></h3>
-  </section>
-  <section>
-  <h3><a href = cat2.html>Genres</a></h3>
-  </section>
-  <section>
-  <h3><a href = cat3.html>南方文化探索 （中文）</a></h3>
-  </section>
-  <section>
-  <h3><a href = all.html>所有的材料</a></h3>
-  </section>
+
+  <div class="subtitles">
+    <h3><a href="levels/index.html">程度</a></h3>
+  </div>
+  <div class="subtitles">
+    <h3><a href="genres/index.html">類型</a></h3>
+  </div>
+  <div class="subtitles">
+    <h3><a href="cat3.html">媒體類型</a></h3>
+  </div>
+  <div class="subtitles">
+    <h3><a href="all.html">所有的材料</a></h3>
+  </div>
+
+
 </body>
 </html>
