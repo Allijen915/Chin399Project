@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <nav>
-  <ul>
-    <li><a href="/index.html">首頁</a></li>
-    <li><a href="/categories/index.html">類別</a></li>
-  </ul>
-
-  <!-- Global search -->
-  <form action="/searchresults/index.html" method="get" class="site-search">
-    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
-    <button type="submit">搜尋</button>
-  </form>
-</nav>
+  <div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
   <section class="homeimg title">
   <h1>英語電影院</h1>
   <h2>一邊看一邊學！</h2>
+  </section>
+  <section class="title">
+    <p>你曾經想要學好英文，但是不知道怎麽開始？你曾經想要看英文電影或影片，但是詞匯一直太難了嗎？我們網站能幫助你！在這裏，
+      你能找到配合你興趣的影片，還有適合你程度的字幕。你能選擇初級、中級或高級的影片，然後一邊看一邊學英文！</p>
   </section>
   <section class="doorimg title">
   <p><a href = "/categories/index.html">進去電影院</a></p>

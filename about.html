@@ -7,34 +7,51 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<nav>
-  <ul>
-    <li><a href="/index.html">首頁</a></li>
-    <li><a href="/categories/index.html">類別</a></li>
-  </ul>
-
-  <!-- Global search -->
-  <form action="/searchresults/index.html" method="get" class="site-search">
-    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
-    <button type="submit">搜尋</button>
-  </form>
-</nav>
+<div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
   
 
   <section class="title">
     <h1>關於本站</h1>
   </section>
-  <section class="subtitles">
+  <section class="subtitles1">
+    <p>歡迎來到 英語電影院！
+本站的宗旨是為中文母語的英語學習者，提供一個豐富而真實的英語影片資源的平台。透過各類型的影片──如紀錄片、訪談、影集、短片、Vlog 等──學習者能夠在自然語境中提升聽力、詞彙與語感。
+我們希望讓英語學習不僅僅是課本上的練習，而是一場沉浸式的文化體驗。就像一座圖書館一樣，這裡匯集了多樣的英語內容，但我們更注重的是學習品質——讓你能輕鬆地找到符合興趣又有教育意義的影片。
+無論你是初學者、準備考試的學生，或是想維持語感的進階學習者，都能在這裡找到合適的素材，讓學習英語變得自然、有趣、並與真實生活有所連結。
+</p>
+  </section>  
+  <section class="subtitles1">
     <h2>關於我們</h2>
   </section>
-  <section class="subtitles">
+  <div class="subcat">
+  <section class="subtitles2">
+    <h3>愛真</h3>
+    <p>大家好！我叫愛真，我是美國科羅拉多州人。我現在就讀於密西西比大學，目前大二。我雙主修中文跟資訊工程，我畢業以後想要
+      當資安工程師。我學中文三年了：第一年是科羅拉多州學的，第二年在台灣，目前在密西西比州學習。歡迎光臨我們的網站!
+    </p>
+  </section>
+  <section class="subtitles2">
+    <h3>秀文</h3>
+    <p>我雙主修機械工程與中文。在台積電（TSMC）實習期間，我受到許多同事的啟發——他們努力提升自己的英語能力，
+      卻常覺得缺乏合適的學習資源。於是，我決定建立這個網站，將各種真實的英語影片集中在一起，幫助他們更自然地學習英語。
+    </p>
+  </section>
+  </div>
+  <section class="subtitles1">
     <h2>網站的目的</h2>
   </section>
-  <section>
+  <section class="subtitles2">
   <p>
-    我們曾經也出國外，很努力的學中文。我們那時候發現大部分的當地影片太難懂，沒有辦法用他們來學習。
-    所以，我們創造這個網站來幫學英文的人不需要經過一樣的痛苦。我們網站能幫你輕輕鬆鬆地
-    學英文，看適合您程度跟您感興趣的影片！不要花費時間找適合的影片了。
+    我們曾經也在國外生活過，很努力地學中文。當時發現大部分的當地影片太難懂，沒有辦法用他們來學習。再加上影片資源太多，不知道從何找起。
+    因爲有這些痛點，所以，我們建立這個網站來幫學英文的人，這樣就不需要經歷一樣的痛苦。我們網站能幫你輕輕鬆鬆地
+    學英文，根據您的程度跟您感興趣的話題找到適合你的影片！不用再花費巨量時間找適合的影片了。
   </p>
   </section>
 </body>

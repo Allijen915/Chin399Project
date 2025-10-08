@@ -18,8 +18,14 @@
     padding: 30px 70px; 
     margin: 30px;
 }
-.subtitles{
-    background-color: rgb(48, 81, 115);
+.subtitles1{
+    background-color: rgb(11, 44, 77);
+    border: 5px solid rgb(229, 199, 52);
+    padding: 30px 70px; 
+    margin: 30px;
+}
+.subtitles2{
+    background-color: rgb(37, 56, 94);
     border: 5px solid rgb(229, 199, 52);
     padding: 30px 70px; 
     margin: 30px;
@@ -48,7 +54,7 @@
     background-position: center;
 }
 /* text and links*/
-h1, h2, p{
+h1, h2,h3, p{
     color: whitesmoke;
 }
 h1{

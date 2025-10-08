@@ -8,19 +8,14 @@
 
 </head>
 <body>
- <nav>
-  <ul>
-    <li><a href="../../index.html">首頁</a></li>
-    <li><a href="/categories/index.html">類別</a></li>
-    <li><a href="../../searchresults/index.html">搜索</a></li>
-  </ul>
-
-  <form action="../../searchresults/index.html" method="get" class="site-search">
-    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
-    <button type="submit">搜尋</button>
-  </form>
-</nav>
-
+ <div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
   <section>
   <h1>中級</h1>
   </section>
