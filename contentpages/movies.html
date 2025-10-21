@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英語電影院 - 電影 (Movies)</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-wrap {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      background: #111;
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-meta {
+      color: #fff;
+      margin-top: 0.75rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+  <main class="container">
+    <div class="title">
+    <h1>電影 (Movies)</h1>
+      </div>
+   
+    <div class="video-wrap">
+      <div class="ratio">
+        <iframe width="916" height="515" src="https://www.youtube.com/embed/bIr0RaIwAWw"
+          title="Dogs actually know everything. #shorts" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-meta">
+        <h3>Dogs actually know everything. #shorts</h3>
+        <p>🎬 影片片段時間：00:08 <br>
+📌 英文詞彙/表達："I guess Max already figured that out."<br>
+🗣️ 中文翻譯：我看麥克斯已經知道了。<br>
+🧠 使用小貼士（文化提醒）<br>
+to figure something out<br>
+- 正式、口語都能用，但是比較偏向於口語場景。<br>
+- 意思是一個人一直思考就明白或知道一件事情。<br>
+- 可替代詞：I guess Max already understood that. （沒有“figured that out”努力思考的感覺）<br>
+<br>
+🎬 影片片段時間：00:29<br>
+📌 英文詞彙/表達："I did not sign on to babysit Kyle’s crazy dog."<br>
+🗣️ 中文翻譯：我沒答應要照看凱爾那瘋狗。（口語）<br>
+🧠 使用小貼士（文化提醒）<br>
+- “sign on” 的意思是答應，常見的搭配是“did not sign on”。(口語）<br>
+	- 平常是一個人答應的事跟做的事有所不同就會用這個句子。<br>
+- “to babysit”直接翻譯是照顧孩子的意思，但是更抽象的用法是如果一個東西、動物、植物等需要很多照顧跟注意，可以用。但是，抽象的用法是很口語，也是有一點負面（不想要照顧那個事情）。<br>
+- 可替代詞：I did not agree to take care of Kyle’s crazy dog<br>
+<br>
+🎬 影片片段時間：00:47<br>
+📌 英文詞彙/表達："He’ll tire himself out"<br>
+🗣️ 中文翻譯：他會把自己累壞了。（口語）<br>
+🧠 使用小貼士（文化提醒）<br>
+-  “to tire himself/herself/themselves/myself/yourself out” <br>
+- 更像口語，常用於朋友或家人之間，但是比較好關係的學生或老闆之間也能用。<br>
+- 可替代詞：He’ll get tired（累的情況不那麽高）<br>
+
+</p>
+        <!--<a href="/notes/test.html">NOTES</a>-->
+      </div>
+    </div>
+    </div>
+    <div class="video-wrap">
+      <div class="ratio">
+            <iframe width="916" height="515" 
+            src="https://www.youtube.com/embed/YLqiXEnXlPg" 
+            title="The fastest way to lose authority is to let &quot;small&quot; violations slide #shorts #wecrashed" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+            <h3>The fastest way to lose authority is to let "small" violations slide #shorts #wecrashed</h3>
+            <p> </p>
+        </div>
+        </div>
+  </main>
+</body>
+</html>
