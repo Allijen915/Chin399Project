@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英語電影院 - 電影 (Movies)</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-wrap {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      background: #111;
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-meta {
+      color: #fff;
+      margin-top: 0.75rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+  <main class="container">
+    <div class="title">
+    <h1>電影 (Movies)</h1>
+      </div>
+   
+    <div class="video-wrap">
+      <div class="ratio">
+        <iframe width="916" height="515" 
+        src="https://www.youtube.com/embed/9Xq6P1lat2E?list=PL0Qb8MZj1vdPdfiwUfhwCtXXKXu23hZXx" 
+        title="It&#39;s hard to keep an eye on a lively, active child. #shorts" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+      </div>
+      <div class="video-meta">
+        <h3>There She Goes (2018)</h3>
+        <button class = accordion>生詞單</button>
+        <div class="panel">
+          bruising<br>
+          incident report <br>
+          social services<br>
+          accusatory<br>
+          officially <br>
+        </div>
+        <button class = accordion>📌 英文詞彙/表達："She's picked it up in no time."</button>
+        <div class="panel">
+🎬 影片片段時間：00:02 <br>
+🗣️ 中文翻譯：他很快就學會了。<br>
+🧠 使用小貼士（文化提醒）<br>
+- to pick something up (in no time)<br>
+- in no time 是這個句子非强制的部分<br>
+- 這句話很口語，平常朋友之間會用。<br>
+- 意思是一個人很快就學會某個東西，常常表示那個人很聰明。<br>
+- 例子： "She thought her daughter was a genius because she picked up calculus in no time."<br>
+- 可替代詞：She learned how to do it really fast. <br>
+</div>
+<button class = accordion>
+📌 英文詞彙/表達："Let her find her own way."</button>
+<div class="panel">
+🎬 影片片段時間：00:05<br>
+🗣️ 中文翻譯：讓她自己找到她的路。<br>
+🧠 使用小貼士（文化提醒）<br>
+- let someone find his/her/their own way<br>
+- 正式、口語都能用，但口語中比較常見。<br>
+- 意思是一個人應該自己解決問題或學會某件事，而不是依賴別人。<br>
+- 例子： "You shouldn't chose what college your daughter should go to. Let her find her own way."<br>
+- 可替代詞：Let her try to do it by herself. <br>
+</div>
+<button class = accordion>
+📌 英文詞彙/表達："You cannot be everywhere all the time."<br></button>
+<div class="panel">
+🎬 影片片段時間：00:36<br>
+🗣️ 中文翻譯：你不可能隨時隨地都在。<br>
+🧠 使用小貼士（文化提醒）<br>
+-  “I/You/They cannot be everywhere all the time.” <br>
+- 很口語，有負面的含義，用在朋友或家人之間。<br>
+- 意思是一個人無法始終在場，所以他們沒有辦法管理所有的事情。<br>
+- 例子： “You already have too much homework, don't sign up to babysit her kid too. You cannot be everywhere all the time."<br>
+- 可替代詞：I can't be watching her all of the time.<br>
+</div>
+        <!--<a href="/notes/test.html">NOTES</a>-->
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
