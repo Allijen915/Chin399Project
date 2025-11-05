@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英語電影院 - 醫療</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-wrap {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      background: #111;
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-meta {
+      color: #fff;
+      margin-top: 0.75rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <div id="navbar"></div>
+<script>
+  fetch('/partials/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+  <main class="container">
+    <div class="title">
+    <h1>醫療 (medical)</h1>
+      </div>
+    <div class="video-wrap">
+      <div class="ratio">
+            <iframe width="916" height="515" 
+            src="https://www.youtube.com/embed/etvMD6Pr4gE" 
+            title="Regardless of whether he has committed a crime, he should receive the treatment he deserves.#shorts" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="video-meta">
+            <h3>New Amsterdam (2018)</h3>
+            <button class = accordion>生詞單</button>
+            <div class="panel">
+                <!--
+                extra note possibilities:
+                How'd you leave it with the warden？
+                The warden is a results guy, and he liked our results. -->
+                nuts- 瘋狂<br>
+                symptoms- 症狀<br>
+                mood swings- 很大的情緒改變<br>
+                hair loss- 頭髮丟了<br>
+                observation- 觀察<br>
+                psycological- 心理的<br>
+                warden- 監獄長<br>
+                </div>
+            <button class=accordion>📌 英文詞彙/表達："Hey, you have a second? Sure, what's up?"</button>
+            <div class="panel">
+🎬 影片片段時間：0：00<br>
+🗣️ 中文翻譯：嘿，你有空嗎？ 當然，怎麼了？<br>
+🧠 使用小貼士（文化提醒）<br>
+-  Do you have a sec/second/minute?  <br>
+- second 代表一段時間<br>
+- what's up 在這裏的意思是，怎麽了或發生什麽事。<br
+- 這兩句話比較口語，但正式場景或職場中還能用。只是地位比你高很多的人（像總統，國君，CEO，etc.） 不應該用。<br>
+- 例子："You: *knocks on the door of your supervisor* 'Hey, do you have a second? I need
+to talk to you about the upcoming project.' Supervisor：'Sure, what's up?'"<br>
+- 可替代詞：Do you have time to talk? Yeah, what is going on? <br>
+</div>
+<button class = accordion>
+📌 英文詞彙/表達："Big mood swings out of nowhere, putting on some weight,"</button>
+<div class="panel">
+🎬 影片片段時間：0:03<br>
+🗣️ 中文翻譯：情緒突然起伏很大，體重也增加了一些 <br>
+🧠 使用小貼士（文化提醒）<br>
+-  (sbj) out of nowhere; 意識是sbj 突然發生或出現，沒有顯然的原因或根源。<br>
+- (they are/she/he is, etc.) putting on some weight; 意思是體重增加了，但沒有增加的非常大，也不是像“gained weight"那麽負面。<br>
+-  這幾句話很口語，平常是老百姓用的（專家不會用） 。<br>
+- 例子：“She's pregnant, so she often has big mood swings out of nowhere. She's also putting on some weight as the baby grows.”<br>
+- 可替代詞：Her emotions change drastically with no reason, and she's been gaining some weight.<br>
+</div>
+<button class = accordion>
+📌 英文詞彙/表達："She's got so many symptoms that any doctor would want her under observation yesterday."</button>
+<div class="panel">
+🎬 影片片段時間：0:30<br>
+🗣️ 中文翻譯：她身上出現的症狀多到讓任何醫生都會認為她急需立即觀察。<br>
+🧠 使用小貼士（文化提醒）<br>
+-  ...(原因, x so y)... that （人）would want (something) yesterday. <br>
+- 意思是這個原因非常緊迫，緊迫到昨天應該處理好。<br>
+- 正式口語都能用。<br>
+- 例子："He was so sick that the doctors wanted him to start taking the medicine yesterday."<br>
+- 可替代詞： Because of how many symptoms she has, any doctor would urgently need her under observation. <br>
+</div>
+        </div>
+        </div>
+        
+  </main>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
