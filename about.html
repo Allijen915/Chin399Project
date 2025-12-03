@@ -8,14 +8,18 @@
 </head>
 <body>
 <div id="navbar"></div>
-<script>
-  fetch('partials/nav.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('navbar').innerHTML = html;
-    });
-</script>
-  
+<nav>
+  <ul>
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="about.html">關於本站</a></li>
+    <li><a href="categories/index.html">類別</a></li>
+  </ul>
+
+  <form action="searchresults/index.html" method="get" class="site-search">
+    <input type="text" name="q" placeholder="搜尋影片、主題或關鍵字…" aria-label="搜尋">
+    <button type="submit">搜尋</button>
+  </form>
+</nav>
 
   <section class="title">
     <h1>關於本站</h1>
