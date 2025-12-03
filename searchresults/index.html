@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>英語電影院- 搜索</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
 </head>
 <body>
     <div id="navbar"></div>
 <script>
-  fetch('/partials/nav.html')
+  fetch('../partials/nav.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
