@@ -40,7 +40,7 @@
     margin-top: 50px;
     background: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-        url("/images/opendoor2.avif");
+        url("images/opendoor2.avif");
     background-position: right top;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +50,7 @@
     margin-top: 50px;
     background: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-        url("/images/theaterchairimg.jpg");
+        url("images/theaterchairimg.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
